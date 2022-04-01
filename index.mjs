@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import t from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-symbols@esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-property-names@esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-get-prototype-of@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-own-property@esm/index.mjs";import i from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-writable-property@esm/index.mjs";var n=t,o=s,p=e,d=r,m=i;var l=function(t){var s,e,r,i,l,h;if(null==t)return[];r=Object(t),s={},e=[];do{for(i=o(r),h=0;h<i.length;h++)l=i[h],!1===d(s,l)&&m(r,l)&&e.push(l),s[l]=!0;for(i=n(r),h=0;h<i.length;h++)l=i[h],!1===d(s,l)&&m(r,l)&&e.push(l),s[l]=!0;r=p(r)}while(r);return e};export{l as default};
+//# sourceMappingURL=index.mjs.map
