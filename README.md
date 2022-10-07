@@ -92,11 +92,7 @@ var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
 var Symbol = require( '@stdlib/symbol-ctor' );
 var writablePropertiesIn = require( '@stdlib/utils-writable-properties-in' );
 
-var hasSymbols;
-var props;
-var obj;
-
-hasSymbols = hasSymbolSupport();
+var hasSymbols = hasSymbolSupport();
 
 function Foo() {
     this.a = 'a';
@@ -135,11 +131,9 @@ if ( hasSymbols ) {
     });
 }
 
-obj = new Foo();
-props = writablePropertiesIn( obj );
-
-console.log( props );
-// e.g., => [ 'a', 'foo', ... ]
+var obj = new Foo();
+var props = writablePropertiesIn( obj );
+// e.g., returns [ 'a', 'foo', ... ]
 ```
 
 </section>
