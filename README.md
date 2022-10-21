@@ -31,6 +31,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-writable-properties-in@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-writable-properties-in/tags). For example,
+
+```javascript
 import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-writable-properties-in@v0.0.8-deno/mod.js';
 ```
 
@@ -74,7 +79,7 @@ var props = writablePropertiesIn( obj );
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
 import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
 import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-writable-properties-in@v0.0.8-deno/mod.js';
+import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-writable-properties-in@deno/mod.js';
 
 var hasSymbols = hasSymbolSupport();
 
