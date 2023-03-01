@@ -24,14 +24,30 @@ limitations under the License.
 
 > Return an array of an object's own and inherited writable property names and [symbols][@stdlib/symbol/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-writable-properties-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-writable-properties-in@deno/mod.js';
+var writablePropertiesIn = require( '@stdlib/utils-writable-properties-in' );
 ```
 
 #### writablePropertiesIn( obj )
@@ -39,7 +55,7 @@ import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-wr
 Returns an `array` of an object's own and inherited writable property names and [symbols][@stdlib/symbol/ctor].
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 var obj = {};
 
@@ -71,10 +87,10 @@ var props = writablePropertiesIn( obj );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import writablePropertiesIn from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-writable-properties-in@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var writablePropertiesIn = require( '@stdlib/utils-writable-properties-in' );
 
 var hasSymbols = hasSymbolSupport();
 
@@ -132,9 +148,9 @@ var props = writablePropertiesIn( obj );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/inherited-writable-properties`][@stdlib/utils/inherited-writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited writable property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/writable-properties`][@stdlib/utils/writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own writable property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-inherited-writable-properties`][@stdlib/utils/inherited-writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited writable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-writable-properties`][@stdlib/utils/writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own writable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-properties-in`][@stdlib/utils/properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited property names and symbols.</span>
 
 </section>
 
@@ -149,7 +165,7 @@ var props = writablePropertiesIn( obj );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -209,15 +225,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-writable-properties-in/main/LICENSE
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor/tree/deno
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/utils/inherited-writable-properties]: https://github.com/stdlib-js/utils-inherited-writable-properties/tree/deno
+[@stdlib/utils/inherited-writable-properties]: https://github.com/stdlib-js/utils-inherited-writable-properties
 
-[@stdlib/utils/writable-properties]: https://github.com/stdlib-js/utils-writable-properties/tree/deno
+[@stdlib/utils/writable-properties]: https://github.com/stdlib-js/utils-writable-properties
 
-[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils-properties-in/tree/deno
+[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils-properties-in
 
 <!-- </related-links> -->
 
